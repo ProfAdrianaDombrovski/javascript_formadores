@@ -5,5 +5,7 @@ function tocaSomRisada()
 }
 
 
-document.querySelectorAll('.tecla')
+const listaDeTeclas = document.querySelectorAll('.tecla');
+
+listaDeTeclas[0].onclick = tocaSomRisada;
 
