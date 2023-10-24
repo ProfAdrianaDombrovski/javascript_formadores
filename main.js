@@ -1,10 +1,15 @@
 
-function tocaSomRisada()
+function tocaSomaplausos()
 {
-    document.querySelector('#som_tecla_risada').play();
+    document.querySelector('#som_tecla_aplausos').play();
 }
 
 const listaDeTeclas = document.querySelectorAll(".tecla");
 
-listaDeTeclas[2].onclick = tocaSomRisada;
+let contador = 0;
+while(contador < 8 ){
+    listaDeTeclas[contador].onclick = tocaSomAplausos;
+    contador = contador + 1;
+    console.log(contador);
+
 
